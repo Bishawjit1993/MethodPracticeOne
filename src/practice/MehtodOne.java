@@ -1,12 +1,68 @@
 package practice;
 
 public class MehtodOne {
-public static void main(String[] args) {
-	System.out.println("first project");
-	System.out.println("QUE-12:" + getPrettyResult(2,3,'+'));
-	System.out.println("QUE-EXTRA:" + getAverage(1, 2, 3));
-	System.out.println("QUE-5: " + "hello\nBishawjit");
-}
+	public static void main(String[] args) {
+		System.out.println("first project");
+		System.out.println("QUE-12:" + getPrettyResult(2, 3, '+'));
+		System.out.println("QUE-EXTRA:" + getAverage(1, 2, 3));
+		System.out.println("QUE-5: " + "hello\nBishawjit");
+		System.out.println("QUE-extra1:-" + getSpaceCount("Aa kiu I swd skieo 236587 GH kiu sieo 2533"));
+		System.out.println("QUE-extra2:-" + getLetterCount("Aa kiu I swd skieo 236587 GH kiu sieo 2533"));
+		System.out.println("QUE-EXTRACOUNT:" + getNumberCount("Aa kiu I swd skieo 236587 GH kiu sieo 2533"));
+	}
+/**
+ *que-extra: Write a Java program to count the letters, spaces, numbers and other characters of an input string.
+ * The string is :  Aa kiu I swd skieo 236587 GH kiu sieo 2533
+ * parameter: String text
+ * return:int
+ * serving: variable
+ */
+	public static int getLetterCount(String text) {
+		int count = 0;
+		text = text.toLowerCase();
+		String letter = "abcdefghijklmnopqrstuvwxyz";
+		for (int i = 0; i < text.length(); i = i + 1) {
+			String textOne = String.valueOf(text.charAt(i));
+			if (letter.contains(textOne)) {
+				count = count + 1;
+			}
+		}
+		return count;
+	}
+/**
+ * Write a Java program to count spaces, numbers and other characters of an input string.
+ * The string is :  Aa kiu I swd skieo 236587 GH kiu sieo 2533
+ * parameter: String text
+ * return:int
+ * serving: variable
+ */
+	public static int getSpaceCount(String text) {
+		int count = 0;
+		for (int i = 0; i < text.length(); i = i + 1) {
+			if (Character.isSpace(text.charAt(i))) {
+				count = count + 1;
+			}
+		}
+		return count;
+	}
+/**
+ * Write a Java program to count the numbers of an input string.
+ *The string is :  Aa kiu I swd skieo 236587 GH kiu sieo 25.33
+ * parameter: String text
+ * return:int
+ * serving: variable
+ */
+	public static int getNumberCount(String text) {
+		int count = 0;
+		for (int i = 0; i < text.length(); i = i + 1) {
+			String value = String.valueOf(text.charAt(i));
+			if (Character.isDigit(text.charAt(i))) {
+				count = count + 1;
+			}
+		}
+		return count;
+	}
+
 /**
  * que-5: write a method to print Hello on screen and your name in a separate line.
  */
