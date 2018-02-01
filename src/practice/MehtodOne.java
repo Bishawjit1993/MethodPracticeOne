@@ -5,7 +5,11 @@ public static void main(String[] args) {
 	System.out.println("first project");
 	System.out.println("QUE-12:" + getPrettyResult(2,3,'+'));
 	System.out.println("QUE-EXTRA:" + getAverage(1, 2, 3));
+	System.out.println("QUE-5: " + "hello\nBishawjit");
 }
+/**
+ * que-5: write a method to print Hello on screen and your name in a separate line.
+ */
 /**
  * que-extra: write a method that take three number and return the average of those numbers.
  * parameter: int numOne, int numTwo, int numThree
