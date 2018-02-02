@@ -1,5 +1,6 @@
 package practice;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MehtodOne {
@@ -11,9 +12,29 @@ public class MehtodOne {
 		System.out.println("QUE-extra1:-" + getSpaceCount("Aa kiu I swd skieo 236587 GH kiu sieo 2533"));
 		System.out.println("QUE-extra2:-" + getLetterCount("Aa kiu I swd skieo 236587 GH kiu sieo 2533"));
 		System.out.println("QUE-EXTRACOUNT:" + getNumberCount("Aa kiu I swd skieo 236587 GH kiu sieo 2533"));
-		int[] numberArray = {5,4,6};
+		int[] numberArray = { 5, 4, 6 };
 		System.out.println("QUE-40:" + Arrays.toString(getSortedArray(numberArray)));
 		System.out.println("que-37:" + getReverseOrder("thisisa"));
+		ArrayList<Integer> numberList = new ArrayList<Integer>();
+		numberList.add(2);
+		numberList.add(3);
+		numberList.add(5);
+		numberList.add(7);
+		System.out.println("QUE-38:" + Arrays.toString(getConvertedArray(numberList)));
+	}
+	/**
+	 * que-38: write a method that take one number list input then convert that to an Array and return that Array.
+	 * parameter: ArrayList<Integer> number
+	 * returnType: int[]
+	 * servingBucket: Array
+	 */
+	public static int[] getConvertedArray(ArrayList<Integer> numberList) {
+		int[] convertedArray = new int[numberList.size()];
+		for (int i = 0; i < numberList.size(); i = i + 1) {
+			convertedArray[i] = numberList.get(i);
+		}
+
+		return convertedArray;
 	}
 	/**
 	 * que-37: write a method that take one string input and return same string in reverse order.
