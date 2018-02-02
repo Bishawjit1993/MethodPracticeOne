@@ -13,8 +13,21 @@ public class MehtodOne {
 		System.out.println("QUE-EXTRACOUNT:" + getNumberCount("Aa kiu I swd skieo 236587 GH kiu sieo 2533"));
 		int[] numberArray = {5,4,6};
 		System.out.println("QUE-40:" + Arrays.toString(getSortedArray(numberArray)));
-		
+		System.out.println("que-37:" + getReverseOrder("thisisa"));
 	}
+	/**
+	 * que-37: write a method that take one string input and return same string in reverse order.
+	 * parameter: String text
+	 * returnType: String 
+	 * servingBucket: variable
+	 */
+		public static String getReverseOrder(String text) {
+			String reverseOrder = "";
+			for (int i = text.length() - 1; i >= 0; i = i - 1) {
+				reverseOrder = reverseOrder + text.charAt(i);
+			}
+			return reverseOrder;
+		}
 /**
  * que-40: write a method that take one numberArray input and return the sorted array.
  * parameter: int[] numberArray
