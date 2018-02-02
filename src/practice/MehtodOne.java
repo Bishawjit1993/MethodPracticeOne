@@ -21,6 +21,29 @@ public class MehtodOne {
 		numberList.add(5);
 		numberList.add(7);
 		System.out.println("QUE-38:" + Arrays.toString(getConvertedArray(numberList)));
+		int[] numArray = {2,5,7,1};
+		System.out.println("QUE-42:" +Arrays.toString(getBubbleSortedArray(numArray)));
+	}
+	/**
+	 * que-42: write a method that take one number array input and return the bubble sorted array.
+	 * parameter: int[] numArray
+	 * returnType: int[]
+	 * servingBucket: variable
+	 */
+	public static int[] getBubbleSortedArray(int[] numArray) {
+		int[] sortedArray = new int[numArray.length];
+		for (int i = 0; i < numArray.length; i = i + 1) {
+			for (int j = i + 1; j < numArray.length; j = j + 1) {
+				if (numArray[i] > numArray[j]) {
+					int num = numArray[i];
+					numArray[i] = numArray[j];
+					numArray[j] = num;
+				}
+			}
+		}
+		sortedArray = numArray;
+
+		return sortedArray;
 	}
 	/**
 	 * que-38: write a method that take one number list input then convert that to an Array and return that Array.
