@@ -1,5 +1,7 @@
 package practice;
 
+import java.util.Arrays;
+
 public class MehtodOne {
 	public static void main(String[] args) {
 		System.out.println("first project");
@@ -9,6 +11,21 @@ public class MehtodOne {
 		System.out.println("QUE-extra1:-" + getSpaceCount("Aa kiu I swd skieo 236587 GH kiu sieo 2533"));
 		System.out.println("QUE-extra2:-" + getLetterCount("Aa kiu I swd skieo 236587 GH kiu sieo 2533"));
 		System.out.println("QUE-EXTRACOUNT:" + getNumberCount("Aa kiu I swd skieo 236587 GH kiu sieo 2533"));
+		int[] numberArray = {5,4,6};
+		System.out.println("QUE-40:" + Arrays.toString(getSortedArray(numberArray)));
+		
+	}
+/**
+ * que-40: write a method that take one numberArray input and return the sorted array.
+ * parameter: int[] numberArray
+ * returnType: int[]
+ * servingBucket: Array	 
+ */
+	public static int[] getSortedArray(int[] numberArray) {
+		int[] sortedArray = new int[numberArray.length];
+		Arrays.sort(numberArray);
+		sortedArray = numberArray;
+		return sortedArray;
 	}
 /**
  *que-extra: Write a Java program to count the letters, spaces, numbers and other characters of an input string.
