@@ -26,6 +26,24 @@ public class MehtodOne {
 		System.out.println("QUE-11:" + getNumberList(3));
 		System.out.println("QUE-12:" + Arrays.toString(getNumberArray(4)));
 		System.out.println("QUE-13:" + Arrays.toString(getNumArray(5)));
+		int[] nummArray = { 1,4,2,5};
+		System.out.println("QUE-15:" + getMaxNum(nummArray));
+		
+	}
+	/**
+	 * que-15: write a method that take one number array input and return the max number.
+	 * parameter: int[] numArray
+	 * returnType: int
+	 * servingBucket: variable
+	 */
+	public static int getMaxNum(int[] nummArray) {
+		int maxNum = nummArray[0];
+		for(int i = 0; i < nummArray.length; i++) {
+			if(maxNum < nummArray[i]) {
+				maxNum = nummArray[i];
+			}
+		}
+		return maxNum;
 	}
 	/**
 	 * QUE-13: write a method that take one number input and return an Array that contains 1 to that given number.
