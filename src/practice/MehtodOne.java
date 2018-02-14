@@ -25,6 +25,20 @@ public class MehtodOne {
 		System.out.println("QUE-42:" +Arrays.toString(getBubbleSortedArray(numArray)));
 		System.out.println("QUE-11:" + getNumberList(3));
 		System.out.println("QUE-12:" + Arrays.toString(getNumberArray(4)));
+		System.out.println("QUE-13:" + Arrays.toString(getNumArray(5)));
+	}
+	/**
+	 * QUE-13: write a method that take one number input and return an Array that contains 1 to that given number.
+	 * parameter: int number
+	 * returnType: int[]
+	 * servingBucket: array
+	 */
+	public static int[] getNumArray(int number) {
+		int[] numArray = new int[number];
+		for (int i = 1; i <= number; i++) {
+			numArray[i - 1] = i;
+		}
+		return numArray;
 	}
 	/**
 	 * que-12: write a method that take one number input and return an array that contains 0 to that given number.
@@ -34,7 +48,7 @@ public class MehtodOne {
 	 */
 	public static int[] getNumberArray(int number) {
 		int[] numberArray = new int[number + 1];
-		for(int i = 0; i <= number; i++) {
+		for (int i = 0; i <= number; i++) {
 			numberArray[i] = i;
 		}
 		return numberArray;
@@ -45,9 +59,9 @@ public class MehtodOne {
 	 * returnType: ArrayList<Integer>
 	 * servingBucket: list
 	 */
-	public static ArrayList<Integer> getNumberList(int number){
+	public static ArrayList<Integer> getNumberList(int number) {
 		ArrayList<Integer> numberList = new ArrayList<Integer>();
-		for(int i = 0; i <= number; i++) {
+		for (int i = 0; i <= number; i++) {
 			numberList.add(i);
 		}
 		return numberList;
