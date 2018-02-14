@@ -24,6 +24,20 @@ public class MehtodOne {
 		int[] numArray = {2,5,7,1};
 		System.out.println("QUE-42:" +Arrays.toString(getBubbleSortedArray(numArray)));
 		System.out.println("QUE-11:" + getNumberList(3));
+		System.out.println("QUE-12:" + Arrays.toString(getNumberArray(4)));
+	}
+	/**
+	 * que-12: write a method that take one number input and return an array that contains 0 to that given number.
+	 * parameter: int number
+	 * returnType: int[]
+	 * servingBucket: Array
+	 */
+	public static int[] getNumberArray(int number) {
+		int[] numberArray = new int[number + 1];
+		for(int i = 0; i <= number; i++) {
+			numberArray[i] = i;
+		}
+		return numberArray;
 	}
 	/**
 	 * QUE-11: write a method that take one number input and return a number list starting from 0 to that given number.
