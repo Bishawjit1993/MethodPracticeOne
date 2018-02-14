@@ -28,8 +28,26 @@ public class MehtodOne {
 		System.out.println("QUE-13:" + Arrays.toString(getNumArray(5)));
 		int[] nummArray = { 1,4,2,5};
 		System.out.println("QUE-15:" + getMaxNum(nummArray));
+		System.out.println("QUE-19:" + getTrueFalse("thisisastring"));
 		
 	}
+	/**
+	 * que-19: write a method that take a string representation of number input and return the same value as an integer.
+	 * parameter: String text
+	 * returnType: boolean
+	 * servingBucket: variable
+	 */
+	public static boolean getTrueFalse(String text) {
+		boolean result = false;
+		text = text.toLowerCase();
+		for (int i = 0; i < text.length(); i++) {
+			if (text.charAt(i) == 'a') {
+				result = true;
+			}
+		}
+		return result;
+	}
+
 	/**
 	 * que-15: write a method that take one number array input and return the max number.
 	 * parameter: int[] numArray
@@ -38,8 +56,8 @@ public class MehtodOne {
 	 */
 	public static int getMaxNum(int[] nummArray) {
 		int maxNum = nummArray[0];
-		for(int i = 0; i < nummArray.length; i++) {
-			if(maxNum < nummArray[i]) {
+		for (int i = 0; i < nummArray.length; i++) {
+			if (maxNum < nummArray[i]) {
 				maxNum = nummArray[i];
 			}
 		}
