@@ -29,7 +29,20 @@ public class MehtodOne {
 		int[] nummArray = { 1,4,2,5};
 		System.out.println("QUE-15:" + getMaxNum(nummArray));
 		System.out.println("QUE-19:" + getTrueFalse("thisisastring"));
-		
+		System.out.println("QUE-20:" + getAllIndex("thisis"));
+	}
+	/**
+	 * que-20: write a method that take one string input and return the sum off all index.
+	 * parameter: String text
+	 * returnType: int
+	 * servingBucket: variable
+	 */
+	public static int getAllIndex(String text) {
+		int result = 0;
+		for (int i = 0; i < text.length(); i++) {
+			result = result + i;
+		}
+		return result;
 	}
 	/**
 	 * que-19: write a method that take a string representation of number input and return the same value as an integer.
