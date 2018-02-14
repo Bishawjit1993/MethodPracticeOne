@@ -23,6 +23,20 @@ public class MehtodOne {
 		System.out.println("QUE-38:" + Arrays.toString(getConvertedArray(numberList)));
 		int[] numArray = {2,5,7,1};
 		System.out.println("QUE-42:" +Arrays.toString(getBubbleSortedArray(numArray)));
+		System.out.println("QUE-11:" + getNumberList(3));
+	}
+	/**
+	 * QUE-11: write a method that take one number input and return a number list starting from 0 to that given number.
+	 * parameter: int number
+	 * returnType: ArrayList<Integer>
+	 * servingBucket: list
+	 */
+	public static ArrayList<Integer> getNumberList(int number){
+		ArrayList<Integer> numberList = new ArrayList<Integer>();
+		for(int i = 0; i <= number; i++) {
+			numberList.add(i);
+		}
+		return numberList;
 	}
 	/**
 	 * que-42: write a method that take one number array input and return the bubble sorted array.
